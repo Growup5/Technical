@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    
+  }
+
+  nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .logo img {
+    max-height: 10vh;
+    border-radius: 40px;
+    margin-left: 30px;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    text-align: left;
+  }
+
+  nav a:hover {
+    background-color:blue;
+    color: black;
+  }
+  .dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {
+  background-color:blue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .logo {
+      order: -1;
+    }
+
+    .navbar-links {
+      display: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .navbar-links a {
+      display: block;
+      /* width: 100%; */
+      padding: 14px 2px;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 24px;
+  }
+
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+
+  }
+  .footer-links :hover{
+  color: blue;
+  }
+
+  .social-icons {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  .social-icons:hover{
+    color: blue;
+    padding-top: 20px;
+  }
+  .WhatsApp{
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .footer-links {
+      flex-direction: column;
+    }
+
+    .footer-links a {
+      padding: 10px 0;
+    }
+  }
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.slider-container {
+  width: 98%;
+  height: 90vh;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* Styling for the slider wrapper */
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Styling for each slide */
+.slide {
+  width: 100%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+/* Styling for navigation buttons */
+.slider-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #2980b9;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .slider-btn {
+    font-size: 18px;
+  }
+  .slider-container{
+    display: none;
+    
+  }
+
+}
